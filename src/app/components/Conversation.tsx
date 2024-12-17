@@ -13,10 +13,12 @@ export function Conversation() {
 
   const getSignedUrl = async (): Promise<string> => {
     const response = await fetch("/api/get-signed-url");
+    console.log('response', response);
     if (!response.ok) {
       throw new Error(`Failed to get signed url: ${response.statusText}`);
     }
     const { signedUrl } = await response.json();
+    console.log('signedUrl', signedUrl);
     return signedUrl;
   };
 

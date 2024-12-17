@@ -10,7 +10,7 @@ export async function GET() {
         },
       }
     );
-
+    console.log('response', response);
     if (!response.ok) {
       throw new Error('Failed to get signed URL');
     }

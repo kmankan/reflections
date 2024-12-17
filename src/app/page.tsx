@@ -1,4 +1,5 @@
 import { Conversation } from './components/Conversation';
+import { ElevenLabsWidget } from './components/ElevenLabsWidget';
 
 export default function Home() {
   return (
