@@ -44,7 +44,7 @@ export function Conversation() {
   }, [conversation]);
 
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-4 justify-center min-h-screen">
       <div className="flex gap-2">
         <button
           onClick={startConversation}
@@ -56,7 +56,7 @@ export function Conversation() {
         <button
           onClick={stopConversation}
           disabled={conversation.status !== 'connected'}
-          className="px-4 py-2 bg-red-500 text-white rounded disabled:bg-gray-300"
+          className="px-4 py-2 bg-green-500 text-white rounded disabled:bg-gray-500"
         >
           Stop Conversation
         </button>
